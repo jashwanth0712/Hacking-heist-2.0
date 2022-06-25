@@ -1,0 +1,22 @@
+{
+    "name":"meet_documenter",
+    "version":"1.0",
+    "description":"this Extension takes screen shots  of meet and makes a pdf ",
+    "background":{
+        "service_worker":"background.js"
+    },
+    "action":{
+        "default_icon":"meet_documentor.png",
+        "default_popup":"popup.html",
+        "matches":"<all_urls>",
+        "default_title":"document the meet"
+    },
+    "icons":{
+        "16":"meet_documentor.png",
+        "32":"meet_documentor.png",
+        "64":"meet_documentor.png",
+        "128":"meet_documentor.png"
+    },
+    "permissions":["activeTab"],
+    "manifest_version":3
+}

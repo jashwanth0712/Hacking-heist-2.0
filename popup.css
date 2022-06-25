@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: fit-content;
+    width: fit-content;
+}
+.invisible{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 150px;
+    height: 100px;
+    margin: 0;
+
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    margin: 5px;
+    background-color: transparent;
+    padding: 0;
+    width: fit-content;
+}
+.get_pdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
