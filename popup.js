@@ -2,13 +2,14 @@ let array=[]
 document.getElementById("paused").addEventListener("click",pause_btn_clicked);
 document.getElementById("play").addEventListener("click",play_btn_clicked);
 document.getElementById("stop").addEventListener("click",stop_btn_clicked);
+console.log(document.querySelector("body"))
 function pause_btn_clicked(){
     console.log("paused");
 document.getElementById("paused").style.display="none";
 document.getElementById("play").style.display="block";
 document.getElementById("stop").style.display="block";
 
-//chrome.runtime.sendMessage({ msg: "pausebtn" });
+chrome.runtime.sendMessage({ msg: "pausebtn" });
 
 }
 
@@ -18,7 +19,8 @@ document.getElementById("play").style.display="none";
 document.getElementById("paused").style.display="block";
 document.getElementById("stop").style.display="block";
 
-//chrome.runtime.sendMessage({ msg: "startbtn" });
+chrome.runtime.sendMessage({ msg: "startbtn" });
+
 
 // var bgPage = chrome.extension.getBackgroundPage();
 // var dat = bgPage.paste();
@@ -31,6 +33,6 @@ document.getElementById("play").style.display="block";
 document.getElementById("paused").style.display="none";
 document.getElementById("stop").style.display="none";
 
-//chrome.runtime.sendMessage({ msg: "stopbtn" });
+chrome.runtime.sendMessage({ msg: "stopbtn" });
 
 }

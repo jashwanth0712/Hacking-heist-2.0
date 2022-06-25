@@ -5,10 +5,15 @@
     "background":{
         "service_worker":"background.js"
     },
+    "content_scripts": [
+        {
+          "matches": ["https://meet.google.com/*"],
+          "js": ["contentScript.js"]
+        }
+      ],
     "action":{
         "default_icon":"meet_documentor.png",
         "default_popup":"popup.html",
-        "matches":"<all_urls>",
         "default_title":"document the meet"
     },
     "icons":{
